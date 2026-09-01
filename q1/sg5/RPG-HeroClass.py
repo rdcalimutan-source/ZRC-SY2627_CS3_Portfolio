@@ -7,24 +7,31 @@
 class Hero:
     def __init__(self, name, hp):
         # TODO: store `name` and `hp` as INSTANCE attributes
-        pass
+        self.name = name
+        self.hp = hp
 
     def take_damage(self, amount):
         # TODO: subtract `amount` from this hero's hp
-        pass
+        try:
+            amt = int(amount)
+        except Exception:
+            amt = 0
+        self.hp -= amt
+        if self.hp < 0:
+            self.hp = 0
 
 
 # ------------------------------------------------------------
 #  Step 3 — Instantiate two heroes and try them out.
 #  Uncomment and complete the lines below once your class works.
 # ------------------------------------------------------------
-# arthur = Hero("Arthur", 100)
-# morgana = Hero("Morgana", 100)
+arthur = Hero("Arthur", 100)
+morgana = Hero("Morgana", 100)
 
-# arthur.take_damage(10)
+arthur.take_damage(10)
 
-# print(arthur.hp)     # Expected: 90
-# print(morgana.hp)    # Expected: 100
+print(f"Arthur's HP: {arthur.hp}" )     # Expected: 90
+print(f"Morgana's HP: {morgana.hp}" )    # Expected: 100
 
 
 # this is pisay
