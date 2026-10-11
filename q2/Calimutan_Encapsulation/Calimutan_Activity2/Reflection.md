@@ -1,0 +1,1 @@
+I learned that @property makes code easier to read because I can access and change values like normal variables. It also allows me to check values before updating them. This helps keep the code simple and protects the data.

@@ -1,0 +1,1 @@
+I learned that public, protected, and private attributes have different levels of access in Python. Public attributes can be accessed anywhere, while protected and private attributes help protect data from direct access. This activity helped me understand how to keep data organized and safe.
