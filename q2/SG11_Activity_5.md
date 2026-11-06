@@ -1,0 +1,5 @@
+1. In each activity, the classes share the same method name, and it is called the same way, with no arguments. Each class does something different when its method runs. None of the classes inherit from a parent class.
+
+2. The functions perform_move() and apply_item() work with any character or item without knowing its class. The same call, character.special_move() or item.use(), gives a different result for each object: a sword swing, a spell, or an arrow, and HP, MP, or speed. Python runs the version of the method that belongs to each object. A new character or item can be added without changing the function or the loop.
+
+3. attack() works differently for each character: a knight slashes with a sword, a wizard casts a fireball, and a rogue stabs from behind. heal() also differs: a cleric casts a healing spell, a potion restores HP instantly, and a campfire restores HP slowly. equip() changes with the item too: a sword raises attack, a shield raises defense, and boots raise speed.
